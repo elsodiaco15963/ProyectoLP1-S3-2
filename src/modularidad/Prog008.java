@@ -11,8 +11,16 @@ public class Prog008 {
         System.out.println("Bienvenido "+nombre);
         System.out.println("Disfruta tu estadia en la carrera de "+carrera);
     }
+    public static void factorial(int numero) {
+        int fac=1;
+        for(int i=1;i<=numero;i++) {
+            fac*=i;
+        }
+        System.out.println("factorial de "+numero+" es: "+fac);
+    }
     public static void main(String[] args) {
        saludo("Daniel");
        saludo2("Juan","Ing.Sistemas");
+       factorial(5);
     }
 }
